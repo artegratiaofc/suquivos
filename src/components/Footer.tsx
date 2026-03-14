@@ -31,8 +31,11 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="border-t border-primary-foreground/20 mt-12 pt-8 text-center">
-          <p className="text-primary-foreground/50 font-body text-sm">© 2024 Suquivos — Sucos Artesanais. Todos os direitos reservados.</p>
+        <div className="border-t border-primary-foreground/20 mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <p className="text-primary-foreground/50 font-body text-sm">© 2026 Suquivos — Sucos Artesanais. Todos os direitos reservados.</p>
+          <a href="https://www.youtube.com/@gelow_geladinhos" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/40 hover:text-secondary transition-colors font-body text-xs">
+            Desenvolvido por @gelow_geladinhos
+          </a>
         </div>
       </div>
     </footer>
