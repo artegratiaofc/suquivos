@@ -9,29 +9,29 @@ const flavors = [
     name: "Laranja Pura",
     description: "Clássico e refrescante. Vitamina C em cada gole.",
     image: fruitOrange,
-    bg: "bg-orange-50",
-    accent: "text-juice-orange",
+    bgClass: "bg-secondary/10",
+    textClass: "text-secondary",
   },
   {
     name: "Maçã Verde",
     description: "Levemente ácido e irresistível. Detox natural.",
     image: fruitApple,
-    bg: "bg-green-50",
-    accent: "text-juice-green",
+    bgClass: "bg-accent/10",
+    textClass: "text-accent",
   },
   {
     name: "Morango Fresco",
     description: "Doce e aromático. O favorito da galera.",
     image: fruitStrawberry,
-    bg: "bg-red-50",
-    accent: "text-juice-strawberry",
+    bgClass: "bg-destructive/10",
+    textClass: "text-destructive",
   },
   {
     name: "Manga Tropical",
     description: "Cremoso e exótico. Sabor de verão o ano todo.",
     image: fruitMango,
-    bg: "bg-yellow-50",
-    accent: "text-juice-mango",
+    bgClass: "bg-secondary/15",
+    textClass: "text-secondary",
   },
 ];
 
@@ -75,14 +75,14 @@ const FlavorGrid = () => {
               key={flavor.name}
               variants={item}
               whileHover={{ scale: 1.05, y: -5 }}
-              className={`${flavor.bg} rounded-3xl p-8 flex flex-col items-center text-center cursor-pointer transition-shadow hover:shadow-xl`}
+              className={`${flavor.bgClass} rounded-3xl p-8 flex flex-col items-center text-center cursor-pointer transition-shadow hover:shadow-xl`}
             >
               <img
                 src={flavor.image}
                 alt={flavor.name}
                 className="w-32 h-32 object-contain mb-6 drop-shadow-lg"
               />
-              <h3 className={`text-xl font-bold ${flavor.accent} mb-2`}>
+              <h3 className={`text-xl font-bold ${flavor.textClass} mb-2`}>
                 {flavor.name}
               </h3>
               <p className="text-muted-foreground font-body text-sm">

@@ -21,7 +21,7 @@ const steps = [
 
 const ProcessSection = () => {
   return (
-    <section id="processo" className="py-24 bg-muted/50">
+    <section id="processo" className="py-24 bg-primary/5">
       <div className="container mx-auto px-6">
         <motion.div
           className="text-center mb-16"
@@ -45,19 +45,16 @@ const ProcessSection = () => {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: i * 0.2, type: "spring", bounce: 0.4 }}
+              transition={{ delay: i * 0.2, type: "spring" as const, bounce: 0.4 }}
             >
               <motion.div
-                className="w-20 h-20 rounded-full bg-secondary flex items-center justify-center mb-6"
+                className="w-20 h-20 rounded-full bg-accent flex items-center justify-center mb-6"
                 whileHover={{ scale: 1.1, rotate: 5 }}
               >
-                <step.icon className="w-10 h-10 text-secondary-foreground" />
+                <step.icon className="w-10 h-10 text-accent-foreground" />
               </motion.div>
               <h3 className="text-2xl font-bold text-foreground mb-2">{step.title}</h3>
               <p className="text-muted-foreground font-body">{step.description}</p>
-              {i < steps.length - 1 && (
-                <div className="hidden md:block absolute" />
-              )}
             </motion.div>
           ))}
         </div>

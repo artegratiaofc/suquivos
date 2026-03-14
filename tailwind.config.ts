@@ -51,13 +51,11 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        juice: {
-          orange: "hsl(var(--juice-orange))",
-          green: "hsl(var(--juice-green))",
-          yellow: "hsl(var(--juice-yellow))",
-          cream: "hsl(var(--juice-cream))",
-          strawberry: "hsl(var(--juice-strawberry))",
-          mango: "hsl(var(--juice-mango))",
+        brand: {
+          purple: "hsl(var(--brand-purple))",
+          orange: "hsl(var(--brand-orange))",
+          green: "hsl(var(--brand-green))",
+          cream: "hsl(var(--brand-cream))",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
@@ -87,22 +85,10 @@ export default {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
-        "bounce-in": {
-          "0%": { transform: "scale(0.3)", opacity: "0" },
-          "50%": { transform: "scale(1.05)" },
-          "70%": { transform: "scale(0.9)" },
-          "100%": { transform: "scale(1)", opacity: "1" },
-        },
-        "float": {
-          "0%, 100%": { transform: "translateY(0)" },
-          "50%": { transform: "translateY(-10px)" },
-        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "bounce-in": "bounce-in 0.6s ease-out",
-        "float": "float 3s ease-in-out infinite",
       },
     },
   },
